@@ -12,9 +12,9 @@ app.get('/api/posts', (req, res) => {
 });
 
 //handle request to react app
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, 'index.html'));
+// });
 
 app.listen(port);
 console.log('Server started on port', port);
